@@ -1,9 +1,6 @@
 {% extends 'blog/base.html' %}
-{% load staticfiles %}
-<html>
-<head>
-    <body>
-         {% block content %}
+
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -14,6 +11,3 @@
         </div>
     {% endfor %}
 {% endblock %}
-    </body>
-</head>
-</html>
